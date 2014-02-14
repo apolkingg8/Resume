@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <title>Resume Page</title>
+  <link href="Styles/Main.css" rel="stylesheet">
+  <script src="Scripts/jquery-2.0.3.js"></script>
+  <script src="Scripts/TweenMax.min.js"></script>
+  <script src="Scripts/jquery.superscrollorama.js"></script>
+  <script src="Scripts/snap.svg.js"></script>
+  <script src="Scripts/Main.js" charset="utf-8"></script>
+</head>
+<body onload="init()">
+  <div id="MainContent">
+    <ul id="tabBar">
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c1"></div>
+          <div class="arrow c1"></div><span class="tab-text">About me</span>
+        </div>
+        <div class="tab back c1"><span class="tab-back-text">About me</span></div>
+      </li>
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c2"></div>
+          <div class="arrow c2"></div><span class="tab-text">Javascript</span>
+        </div>
+        <div class="tab back c2"><span class="tab-back-text">Javascript</span></div>
+      </li>
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c3"></div>
+          <div class="arrow c3"></div><span class="tab-text">HTML & CSS</span>
+        </div>
+        <div class="tab back c3"><span class="tab-back-text">HTML & CSS</span></div>
+      </li>
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c4"></div>
+          <div class="arrow c4"></div><span class="tab-text">Others</span>
+        </div>
+        <div class="tab back c4"><span class="tab-back-text">Others</span></div>
+      </li>
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c5"></div>
+          <div class="arrow c5"></div><span class="tab-text">Works</span>
+        </div>
+        <div class="tab back c5"><span class="tab-back-text">Works</span></div>
+      </li>
+      <li>
+        <div class="tab front">
+          <div class="tab-tag c6"></div>
+          <div class="arrow c6"></div><span class="tab-text">Find me</span>
+        </div>
+        <div class="tab back c6">
+          <h1 class="tab-back-text c6">Find me</h1>
+        </div>
+      </li>
+    </ul>
+    <div id="tabBar-phone">
+      <p class="title">Resume</p>
+      <div class="icon-more"><span></span><span></span><span></span></div>
+    </div>
+    <nav id="phone-nav">
+      <div class="c1">About me</div>
+      <div class="c2">Javascript</div>
+      <div class="c3">HTML & CSS</div>
+      <div class="c4">Others</div>
+      <div class="c5">Works</div>
+      <div class="c6">Find me</div>
+    </nav>
+    <div id="container">
+      <div id="intro" class="content">
+        <p>Hellow, let's<span> Start!</span></p>
+      </div>
+      <div id="aboutMe" class="content">
+        <div class="bracket left">
+          <p>{</p>
+        </div>
+        <div class="main"><br>
+          <p>I'm a<span> web</span> developer,<span> 24</span> years old,</p>
+          <p>graduated from<span> NDHU</span>, majored<span> IM</span> and<span> CSIE</span>.</p><br>
+          <p>Since I had some work experience,</p>
+          <p>I became intersted in<span> UX</span> and<span> Data Visualization</span>,</p>
+          <P>and keep practicing<span> new skills</span> everyday.</P>
+        </div>
+        <div class="bracket right">
+          <p>}</p>
+        </div>
+      </div>
+      <div id="javascript" class="content">
+        <div class="smallCol"></div>
+        <div id="col1" class="col">
+          <div class="card">
+            <div class="front">
+              <div class="titleBox">
+                <p class="title">Nativ</p>
+                <p>Javascript</p>
+              </div>
+              <div class="describe">Solid</div>
+            </div>
+            <div class="back">
+              <p>My first job is developing a<span> Smart-TV App</span>, and I became intersted in javascript in this job.</p><br>
+              <p>I'm learning the<span> language features</span>, and make the code more<span> structured</span> and<span> efficient</span>.</p>
+            </div>
+          </div>
+        </div>
+        <div id="col2" class="col">
+          <div class="card">
+            <div class="front">
+              <div class="titleBox">
+                <p class="title">JQuery</p>
+                <p>& Plugins</p>
+              </div>
+              <div class="describe">Familiar</div>
+            </div>
+            <div class="back">
+              <p>I am familiar with jQuery, and know how to use it<span> correctly</span> and<span> efficiently</span>.</p><br>
+              <p>I've written some jQuery<span> plugin</span>, you can find them on my github.</p>
+            </div>
+          </div>
+        </div>
+        <div id="col3" class="col">
+          <div class="card">
+            <div class="front">
+              <div class="titleBox">
+                <p class="title">MVC</p>
+                <p>& Others</p>
+              </div>
+              <div class="describe">Fair</div>
+            </div>
+            <div class="back">
+              <p>I've used<span> Backbone</span>for some small project, and now I'm learning<span> AngularJS</span>.</p><br>
+              <p>Beacuse of some requirement, I've used<span> Snap.js</span> and<span> amChart</span> for<span> Data Visualization</span>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="smallCol"></div>
+      </div>
+      <div id="css" class="content">
+        <div class="row"></div>
+        <div class="main">
+          <div class="part top">
+            <div class="title">HTML</div>
+            <div class="describe">
+              <p>I'm<span> Familiar</span> with XHTML1.0(using<span> Jade</span>), and learning some new feature about<span> HTML5</span>. I have some knowledge about<span> semantic HTML</span> and avoid redundancy DOMs.</p>
+            </div>
+          </div>
+          <div class="part bot">
+            <div class="describe">
+              <p>My CSS skill doesn't as good as javascript, but I think it's<span> Not Bad</span>. I know how to do<span> RWD</span>, and new features in<span>CSS3</span>. I used<span> LESS + LESSHAT</span> deal with<span> cross-browser</span> issues and other annoying things.</p>
+            </div>
+            <div class="title">CSS</div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+      <!--#otherSkill.content
+      .col
+      .main
+          ul.parallax
+              li.parallax-layer
+                  img(src='imgs/other4.png').l4
+              li.parallax-layer
+                  img(src='imgs/other3.png').l3
+              li.parallax-layer
+                  img(src='imgs/other2.png').l2
+              li.parallax-layer
+                  img(src='imgs/other1.png').l1
+      .col
+      -->
+      <div id="otherSkill" class="content">
+        <div class="main">
+          <svg id="skillChart"></svg>
+        </div>
+      </div>
+      <div id="works" class="content">
+        <div class="row"></div>
+        <div class="main">
+          <div class="monitor"><img src="imgs/works.png"></div>
+          <div class="stand"></div>
+          <div class="bottom"></div>
+        </div>
+        <div class="progress">
+          <div class="arrow left"></div>
+          <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="arrow right"></div>
+        </div>
+        <div class="describe">
+          <ul>
+            <li class="active">
+              <div class="title">Graduation Project</div>
+              <div class="text">
+                <p>
+                  A part of
+                  &nbsp;<a target="_blank" href="http://www.ndap.org.tw/index.php">National Digital Archives Program</a>.
+                </p>
+                <p>Demo :<span> missing</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="title">Smart TV App</div>
+              <div class="text">
+                <p>A stock app on Samsung & Panasonic smart-tv.</p>
+                <p>Demo :<span> @TV</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="title">Web Account</div>
+              <div class="text">
+                <p>An accounting web application.</p>
+                <p><a target="_blank" href="http://apolkingg8.3utilities.com/webaccount/">Demo</a><span> (Sorry but it's hosted on my PC, so only open in the afternoon.)</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="title">Album Box</div>
+              <div class="text">
+                <p>Personal project in school. My first web.</p>
+                <p>Demo<span> missing</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="title">KRT Logmap</div>
+              <div class="text">
+                <p>Practice for SVG. Parser used .NET(C#).</p>
+                <p><a target="_blank" href="http://apolkingg8.github.io/DemoPages/KRT_logMap/demo.html">Demo</a><span> (Hosted on GithubPage)</span></p>
+              </div>
+            </li>
+            <li>
+              <div class="title">jQuery Plugins</div>
+              <div class="text">
+                <p>Two jQuery plugins on GitHub. Try it :p</p>
+                <p><a target="_blank" href="https://github.com/apolkingg8/JQueryDatePickerTW">DatepickerTW</a>,&nbsp;<a target="_blank" href="https://github.com/apolkingg8/CommentOnPhoto">CommentOnPhoto</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div id="findMe" class="content">
+        <div class="main">
+          <p>If you're looking for a<span> Front-End developer</span>, or just want a<span> chat</span>, you can find me at my&nbsp;<span><a href="http://apolkingg8.logdown.com">Blog</a></span>,&nbsp;<span><a href="https://github.com/apolkingg8">Github</a></span>, or&nbsp;<span><a href="mailto:apolkingg8@gmail.com">Mail me</a></span>. Thank you :)</p>
+        </div>
+      </div>
+    </div>
+    <div id="h-container"></div>
+    <div id="scrollBarCover"></div>
+  </div>
+</body>

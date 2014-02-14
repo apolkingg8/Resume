@@ -1,0 +1,18 @@
+/* EXAMPLE USE:
+
+ GOOD using variable:
+ @media all and (max-width: @tabletWidth) {
+   body {
+
+   }
+ }
+
+ BETTER with embedded media queries:
+ body {
+         @media @tablet {
+                 background: #000;
+         }
+ }
+
+Better is subjective. Embedded media queries do increase file size, but we are probably talking about 20 kilobytes per site. With compression, I would prefer a more readable, more object oriented (everything related to an HTML node is next to each other). If the CSS got too large, I would recommend breaking it into separate files and loading it in modules.
+*/

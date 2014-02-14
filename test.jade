@@ -1,0 +1,327 @@
+doctype html
+html
+head
+    title Resume Page
+    link(href='Styles/Main.css', rel='stylesheet')
+    script(src='Scripts/jquery-2.0.3.js')
+    script(src='Scripts/TweenMax.min.js')
+    script(src='Scripts/jquery.superscrollorama.js')
+    script(src='Scripts/snap.svg.js')
+    script(src='Scripts/Main.js', charset='utf-8')
+body(onload='init()')
+    #MainContent
+        ul#tabBar
+            li
+                .tab.front
+                    .tab-tag.c1
+                    .arrow.c1
+                    span.tab-text About me
+                .tab.back.c1
+                    span.tab-back-text About me
+            li
+                .tab.front
+                    .tab-tag.c2
+                    .arrow.c2
+                    span.tab-text Javascript
+                .tab.back.c2
+                    span.tab-back-text Javascript
+            li
+                .tab.front
+                    .tab-tag.c3
+                    .arrow.c3
+                    span.tab-text HTML & CSS
+                .tab.back.c3
+                    span.tab-back-text HTML & CSS
+            li
+                .tab.front
+                    .tab-tag.c4
+                    .arrow.c4
+                    span.tab-text Others
+                .tab.back.c4
+                    span.tab-back-text Others
+            li
+                .tab.front
+                    .tab-tag.c5
+                    .arrow.c5
+                    span.tab-text Works
+                .tab.back.c5
+                    span.tab-back-text Works
+            li
+                .tab.front
+                    .tab-tag.c6
+                    .arrow.c6
+                    span.tab-text Find me
+                .tab.back.c6
+                    h1.tab-back-text.c6 Find me
+        #tabBar-phone
+            p.title Resume
+            .icon-more
+                span
+                span
+                span
+        nav#phone-nav
+            .c1 About me
+            .c2 Javascript
+            .c3 HTML & CSS
+            .c4 Others
+            .c5 Works
+            .c6 Find me
+        #container
+            #intro.content
+                p
+                    | Hellow, let's
+                    span  Start!
+            #aboutMe.content
+                .bracket.left
+                    p {
+                .main
+                    br
+                    p
+                        | I'm a
+                        span  web
+                        |  developer,
+                        span  24
+                        |  years old,
+                    p
+                        | graduated from
+                        span  NDHU
+                        | , majored
+                        span  IM
+                        |  and
+                        span  CSIE
+                        | .
+                    br
+                    p
+                        | Since I had some work experience,
+                    p
+                        | I became intersted in
+                        span  UX
+                        |  and
+                        span  Data Visualization
+                        | ,
+                    P
+                        | and keep practicing
+                        span  new skills
+                        |  everyday.
+                .bracket.right
+                    p }
+            #javascript.content
+                .smallCol
+                #col1.col
+                    .card
+                        .front
+                            .titleBox
+                                p.title
+                                    | Nativ
+                                p
+                                    | Javascript
+                            .describe
+                                | Solid
+                        .back
+                            p
+                                | My first job is developing a
+                                span  Smart-TV App
+                                | , and I became intersted in javascript in this job.
+                            br
+                            p
+                                | I'm learning the
+                                span  language features
+                                | , and make the code more
+                                span  structured
+                                |  and
+                                span  efficient
+                                | .
+                #col2.col
+                    .card
+                        .front
+                            .titleBox
+                                p.title
+                                    | JQuery
+                                p
+                                    | & Plugins
+                            .describe
+                                | Familiar
+                        .back
+                            p
+                                | I am familiar with jQuery, and know how to use it
+                                span  correctly
+                                |  and
+                                span  efficiently
+                                | .
+                            br
+                            p
+                                | I've written some jQuery
+                                span  plugin
+                                | , you can find them on my github.
+                #col3.col
+                    .card
+                        .front
+                            .titleBox
+                                p.title
+                                    | MVC
+                                p
+                                    | & Others
+                            .describe
+                                | Fair
+                        .back
+                            p
+                                | I've used
+                                span  Backbone
+                                | for some small project, and now I'm learning
+                                span  AngularJS
+                                | .
+                            br
+                            p
+                                | Beacuse of some requirement, I've used
+                                span  Snap.js
+                                |  and
+                                span  amChart
+                                |  for
+                                span  Data Visualization
+                                |.
+                .smallCol
+            #css.content
+                .row
+                .main
+                    .part.top
+                        .title
+                            | HTML
+                        .describe
+                            p
+                                | I'm
+                                span  Familiar
+                                |  with XHTML1.0(using
+                                span  Jade
+                                | ), and learning some new feature about
+                                span  HTML5
+                                | . I have some knowledge about
+                                span  semantic HTML
+                                |  and avoid redundancy DOMs.
+                    .part.bot
+                        .describe
+                            p
+                                | My CSS skill doesn't as good as javascript, but I think it's
+                                span  Not Bad
+                                | . I know how to do
+                                span  RWD
+                                | , and new features in
+                                span CSS3
+                                | . I used
+                                span  LESS + LESSHAT
+                                |  deal with
+                                span  cross-browser
+                                |  issues and other annoying things.
+                        .title
+                            | CSS
+                .row
+
+            //#otherSkill.content
+                .col
+                .main
+                    ul.parallax
+                        li.parallax-layer
+                            img(src='imgs/other4.png').l4
+                        li.parallax-layer
+                            img(src='imgs/other3.png').l3
+                        li.parallax-layer
+                            img(src='imgs/other2.png').l2
+                        li.parallax-layer
+                            img(src='imgs/other1.png').l1
+                .col
+            #otherSkill.content
+                .main
+                    svg#skillChart
+            #works.content
+                .row
+                .main
+                    .monitor
+                        img(src='imgs/works.png')
+                    .stand
+                    .bottom
+                .progress
+                    .arrow.left
+                    ul
+                        li.active
+                        li
+                        li
+                        li
+                        li
+                        li
+                    .arrow.right
+                .describe
+                    ul
+                        li.active
+                            .title
+                                | Graduation Project
+                            .text
+                                p
+                                    | A part of
+                                    | &nbsp;
+                                    a(target='_blank', href='http://www.ndap.org.tw/index.php') National Digital Archives Program
+                                    | .
+                                p
+                                    | Demo :
+                                    span  missing
+                        li
+                            .title
+                                | Smart TV App
+                            .text
+                                p
+                                    | A stock app on Samsung & Panasonic smart-tv.
+                                p
+                                    | Demo :
+                                    span  @TV
+                        li
+                            .title
+                                | Web Account
+                            .text
+                                p
+                                    | An accounting web application.
+                                p
+                                    a(target='_blank', href='http://apolkingg8.3utilities.com/webaccount/') Demo
+                                    span  (Sorry but it's hosted on my PC, so only open in the afternoon.)
+                        li
+                            .title
+                                | Album Box
+                            .text
+                                p
+                                    | Personal project in school. My first web.
+                                p
+                                    | Demo
+                                    span  missing
+                        li
+                            .title
+                                | KRT Logmap
+                            .text
+                                p
+                                    | Practice for SVG. Parser used .NET(C#).
+                                p
+                                    a(target='_blank', href='http://apolkingg8.github.io/DemoPages/KRT_logMap/demo.html') Demo
+                                    span  (Hosted on GithubPage)
+                        li
+                            .title
+                                | jQuery Plugins
+                            .text
+                                p
+                                    | Two jQuery plugins on GitHub. Try it :p
+                                p
+                                    a(target='_blank', href='https://github.com/apolkingg8/JQueryDatePickerTW') DatepickerTW
+                                    | ,&nbsp;
+                                    a(target='_blank', href='https://github.com/apolkingg8/CommentOnPhoto') CommentOnPhoto
+                .row
+            #findMe.content
+                .main
+                    p
+                        | If you're looking for a
+                        span  Front-End developer
+                        | , or just want a
+                        span  chat
+                        | , you can find me at my&nbsp;
+                        span: a(href='http://apolkingg8.logdown.com') Blog
+                        | ,&nbsp;
+                        span: a(href='https://github.com/apolkingg8') Github
+                        | , or&nbsp;
+                        span: a(href='mailto:apolkingg8@gmail.com') Mail me
+                        | . Thank you :)
+        #h-container
+        #scrollBarCover
